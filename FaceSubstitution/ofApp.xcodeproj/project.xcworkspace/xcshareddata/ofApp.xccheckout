@@ -12,8 +12,12 @@
 	<dict>
 		<key>37526DA425E5430474A14FBFA1BC4525160B5FC1</key>
 		<string>https://github.com/kylemcdonald/ofxCv.git</string>
+		<key>A4D0373C699384D3146D509694B516AB9C7B5AD6</key>
+		<string>https://github.com/kylemcdonald/ofxFaceTracker.git</string>
 		<key>EB7A88F936C8746344691DE012893581596223F7</key>
 		<string>https://github.com/arturoc/FaceSubstitution.git</string>
+		<key>FF12069F7EA21405681BE670CB2F732D40153849</key>
+		<string>https://github.com/cmuartfab/politics-faces-places.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FaceSubstitution/ofApp.xcodeproj</string>
@@ -21,15 +25,19 @@
 	<dict>
 		<key>37526DA425E5430474A14FBFA1BC4525160B5FC1</key>
 		<string>../../../../addons/ofxCv</string>
+		<key>A4D0373C699384D3146D509694B516AB9C7B5AD6</key>
+		<string>../../../../addons/ofxFaceTracker</string>
 		<key>EB7A88F936C8746344691DE012893581596223F7</key>
+		<string>../../../../FaceSubstitution</string>
+		<key>FF12069F7EA21405681BE670CB2F732D40153849</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/arturoc/FaceSubstitution.git</string>
+	<string>https://github.com/cmuartfab/politics-faces-places.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EB7A88F936C8746344691DE012893581596223F7</string>
+	<string>FF12069F7EA21405681BE670CB2F732D40153849</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -47,6 +55,22 @@
 			<string>37526DA425E5430474A14FBFA1BC4525160B5FC1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxCv</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A4D0373C699384D3146D509694B516AB9C7B5AD6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxFaceTracker</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FF12069F7EA21405681BE670CB2F732D40153849</string>
+			<key>IDESourceControlWCCName</key>
+			<string>politics-faces-places</string>
 		</dict>
 	</array>
 </dict>
