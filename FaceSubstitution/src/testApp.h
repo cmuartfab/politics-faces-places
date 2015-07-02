@@ -5,6 +5,7 @@
 #include "Clone.h"
 #include "ofxFaceTracker.h"
 #include "ofxFaceTrackerThreaded.h"
+#include "ofxSyphon.h"
 
 class testApp : public ofBaseApp {
 public:
@@ -22,6 +23,7 @@ public:
 	ofxFaceTracker srcTracker;
 	ofImage src;
 	vector<ofVec2f> srcPoints;
+    ofxSyphonServer faceSubServer;
 	
 	bool cloneReady;
 	Clone clone;

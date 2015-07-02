@@ -16,6 +16,8 @@
 		<string>https://github.com/kylemcdonald/ofxFaceTracker.git</string>
 		<key>EB7A88F936C8746344691DE012893581596223F7</key>
 		<string>https://github.com/arturoc/FaceSubstitution.git</string>
+		<key>F4CCB893AFADB97238A965FD2F28717F1CAAE613</key>
+		<string>https://github.com/astellato/ofxSyphon.git</string>
 		<key>FF12069F7EA21405681BE670CB2F732D40153849</key>
 		<string>https://github.com/cmuartfab/politics-faces-places.git</string>
 	</dict>
@@ -29,6 +31,8 @@
 		<string>../../../../addons/ofxFaceTracker</string>
 		<key>EB7A88F936C8746344691DE012893581596223F7</key>
 		<string>../../../../FaceSubstitution</string>
+		<key>F4CCB893AFADB97238A965FD2F28717F1CAAE613</key>
+		<string>../../../FaceSubstitution/ofxSyphon/</string>
 		<key>FF12069F7EA21405681BE670CB2F732D40153849</key>
 		<string>../../..</string>
 	</dict>
@@ -63,6 +67,14 @@
 			<string>A4D0373C699384D3146D509694B516AB9C7B5AD6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxFaceTracker</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4CCB893AFADB97238A965FD2F28717F1CAAE613</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxSyphon</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

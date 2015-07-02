@@ -27,6 +27,8 @@ void testApp::setup() {
 	if(faces.size()!=0){
 		loadFace(faces.getPath(currentFace));
 	}
+    
+    faceSubServer.setName("Screen Output");
 }
 
 void testApp::update() {
@@ -56,6 +58,7 @@ void testApp::update() {
 			clone.update(srcFbo.getTextureReference(), cam.getTextureReference(), maskFbo.getTextureReference());
 		}
 	}
+    faceSubServer.publishScreen();
 }
 
 void testApp::draw() {
