@@ -32,7 +32,7 @@
 		<key>EB7A88F936C8746344691DE012893581596223F7</key>
 		<string>../../../../FaceSubstitution</string>
 		<key>F4CCB893AFADB97238A965FD2F28717F1CAAE613</key>
-		<string>../../../FaceSubstitution/ofxSyphon/</string>
+		<string>../../../FaceSubstitution/ofxSyphon</string>
 		<key>FF12069F7EA21405681BE670CB2F732D40153849</key>
 		<string>../../..</string>
 	</dict>
