@@ -63,16 +63,13 @@ void testApp::update() {
 	}
 
     //receive osc message
-    while(oscReceiver.hasWaitingMessages()) {
+    while (oscReceiver.hasWaitingMessages()) {
         ofxOscMessage m;
         oscReceiver.getNextMessage(&m);
         
         if (m.getAddress() == "/currentFace") {
             currentFace = m.getArgAsInt32(0);
-            currentFace = ofClamp(currentFace,0,faces.size());
-            if(faces.size()!=0){
-                loadFace(faces.getPath(currentFace));
-            }
+            cout<<currentFace<<endl;
         }
     }
     
