@@ -8,6 +8,8 @@
 #include "ofxSyphon.h"
 #include "ofxOscReceiver.h"
 
+#define PORT 12345
+
 class testApp : public ofBaseApp {
 public:
 	void setup();

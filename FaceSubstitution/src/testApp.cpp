@@ -6,6 +6,7 @@ void testApp::setup() {
 #ifdef TARGET_OSX
 	//ofSetDataPathRoot("../data/");
 #endif
+    ofSetFrameRate(60);
 	ofSetVerticalSync(true);
 	cloneReady = false;
 	cam.initGrabber(1280, 720);
@@ -15,10 +16,12 @@ void testApp::setup() {
 	settings.height = cam.getHeight();
 	maskFbo.allocate(settings);
 	srcFbo.allocate(settings);
+    oscReceiver.setup(PORT);
 	camTracker.setup();
 	srcTracker.setup();
 	srcTracker.setIterations(25);
 	srcTracker.setAttempts(4);
+    
 
 	faces.allowExt("jpg");
 	faces.allowExt("png");
@@ -58,6 +61,22 @@ void testApp::update() {
 			clone.update(srcFbo.getTextureReference(), cam.getTextureReference(), maskFbo.getTextureReference());
 		}
 	}
+
+    //receive osc message
+    while(oscReceiver.hasWaitingMessages()) {
+        ofxOscMessage m;
+        oscReceiver.getNextMessage(&m);
+        
+        if (m.getAddress() == "/currentFace") {
+            currentFace = m.getArgAsInt32(0);
+            currentFace = ofClamp(currentFace,0,faces.size());
+            if(faces.size()!=0){
+                loadFace(faces.getPath(currentFace));
+            }
+        }
+    }
+    
+    //publish screen
     faceSubServer.publishScreen();
 }
 
